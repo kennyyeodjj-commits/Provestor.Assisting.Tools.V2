@@ -1,0 +1,30 @@
+/* Minimal global reset — Provestor uses inline styles for everything else */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure date inputs use the system look on all browsers */
+input[type="date"] {
+  font-family: inherit;
+}
+
+/* Print mode: hide anything tagged no-print */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+}
